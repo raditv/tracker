@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Datatables;
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use Visitor;
+use App\Visitor;
 
 class DatatablesController extends Controller
 {

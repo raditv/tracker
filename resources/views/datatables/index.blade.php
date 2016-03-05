@@ -5,10 +5,12 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Created At</th>
-                <th>Updated At</th>
+                <th>Tanggal</th>
+                <th>Jumlah Masuk</th>
+                <th>Jumlah Keluar</th>
+                <th>Total Jumlah Masuk</th>
+                <th>Total Jumlah Keluar</th>
+                <th>Total Didalam</th>
             </tr>
         </thead>
     </table>
@@ -23,10 +25,12 @@ $(function() {
         ajax: '{!! route('datatables.data') !!}',
         columns: [
             { data: 'id', name: 'id' },
-            { data: 'name', name: 'name' },
-            { data: 'email', name: 'email' },
-            { data: 'created_at', name: 'created_at' },
-            { data: 'updated_at', name: 'updated_at' }
+            { data: 'tanggal', name: 'tanggal' },
+            { data: 'objek_masuk', name: 'objek_masuk' },
+            { data: 'objek_keluar', name: 'objek_keluar' },
+            { data: 'total_masuk', name: 'total_masuk' },
+            { data: 'total_keluar', name: 'total_keluar' },
+            { data: 'total_didalam', name: 'total_didalam' }
         ]
     });
 });

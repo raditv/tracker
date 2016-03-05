@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Datatables;
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
+use Visitor;
 
 class DatatablesController extends Controller
 {
@@ -20,6 +21,6 @@ class DatatablesController extends Controller
      */
     public function anyData()
     {
-        return Datatables::of(User::query())->make(true);
+        return Datatables::of(Visitor::query())->make(true);
     }
 }

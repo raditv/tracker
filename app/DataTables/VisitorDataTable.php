@@ -43,7 +43,7 @@ class VisitorDataTable extends DataTable
         return $this->builder()
                     ->columns($this->getColumns())
                     ->ajax('')
-                    ->table('class' => 'display')
+                    ->table(['class' => 'display'])
                    // ->parameters($this->getBuilderParameters());
 		            ->parameters([
            		       'dom' => 'Bfrtip',

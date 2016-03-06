@@ -44,10 +44,11 @@ class VisitorDataTable extends DataTable
                     ->columns($this->getColumns())
                     ->ajax('')
                    // ->parameters($this->getBuilderParameters());
-		    ->parameters([
-           		 'dom' => 'Bfrtip',
-           		 'buttons' => ['csv', 'excel', 'pdf', 'print', 'reset', 'reload'],
-        	    ]);
+		            ->parameters([
+           		       'dom' => 'Bfrtip',
+                       'colReorder' => true,
+           		       'buttons' => ['csv', 'excel', 'pdf', 'print', 'reset', 'reload'],
+        	           ]);
     }
 
     /**
@@ -61,11 +62,11 @@ class VisitorDataTable extends DataTable
             'id',
             'tanggal',
             'objek_masuk',
-	    'objek_keluar',
-	    'total_masuk',
-	    'total_keluar',
-	    'total_didalam',
-        ];
+	        'objek_keluar',
+	        'total_masuk',
+	        'total_keluar',
+	        'total_didalam',
+         ];
     }
 
     /**

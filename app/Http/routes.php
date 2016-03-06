@@ -11,10 +11,7 @@
 |
 */
 
-Route::controller('/', 'DatatablesController', [
-    'anyData'  => 'datatables.data',
-    'getIndex' => 'datatables',
-]);
+Route::resource('/', 'DatatablesController');
 /*
 |--------------------------------------------------------------------------
 | Application Routes

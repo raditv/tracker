@@ -46,7 +46,6 @@ class VisitorDataTable extends DataTable
                    // ->parameters($this->getBuilderParameters());
 		            ->parameters([
            		       'dom' => 'Bfrtip',
-                       'colReorder' => true,
            		       'buttons' => ['csv', 'excel', 'pdf', 'print', 'reset', 'reload'],
         	           ]);
     }
